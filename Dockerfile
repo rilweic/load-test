@@ -10,4 +10,6 @@ ENV LOCUST_FILE /config/locustfile.py
 
 EXPOSE 8089
 
+
 ENTRYPOINT ["/usr/local/bin/runLocust.sh"]
+CMD [ "-d 60 -r 200 -c 2 -h edge-router" ]
