@@ -1,3 +1,4 @@
+#!/bin/bash
 sleep 15
 echo "starting "
 while true
