@@ -14,4 +14,4 @@ EXPOSE 8089
 
 
 ENTRYPOINT ["/usr/local/bin/run.sh"]
-CMD [ "edge-router" ]
+# CMD [ "edge-router" ]
