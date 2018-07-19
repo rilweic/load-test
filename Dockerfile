@@ -8,8 +8,10 @@ ADD runLocust.sh /usr/local/bin/runLocust.sh
 
 ENV LOCUST_FILE /config/locustfile.py
 
+ADD run.sh /usr/local/bin/run.sh
+
 EXPOSE 8089
 
 
-ENTRYPOINT ["/usr/local/bin/runLocust.sh"]
+ENTRYPOINT ["/usr/local/bin/run.sh"]
 CMD [ "edge-router" ]
