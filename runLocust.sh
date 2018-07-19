@@ -4,7 +4,7 @@
 #
 #####################################################################
 ARGS="$@"
-HOST="${1}"
+HOST="edge-router"
 SCRIPT_NAME=`basename "$0"`
 INITIAL_DELAY=1
 TARGET_HOST="$HOST"
