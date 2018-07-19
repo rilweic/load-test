@@ -96,6 +96,10 @@ while getopts ":d:h:c:r:" o; do
 done
 
 do_check
-while true; do
+while true
+do
+  echo "start load test"
   do_exec
+  echo "load test finished ! sleep 60 seconds and do next !"
+  sleep 60
 done
