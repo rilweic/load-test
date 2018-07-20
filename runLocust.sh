@@ -100,6 +100,6 @@ while true
 do
   echo " --------- starting load test --------- "
   do_exec
-  echo "------ load test finished ! sleep 10 seconds and do next ! ------"
-  sleep 10
+  echo "------ load test finished ! sleep 15 seconds and do next ! ------"
+  sleep 15
 done
