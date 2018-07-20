@@ -9,7 +9,7 @@ SCRIPT_NAME=`basename "$0"`
 INITIAL_DELAY=1
 TARGET_HOST="$HOST"
 CLIENTS=2
-REQUESTS=10
+REQUESTS=100
 
 # -d 60 -r 200 -c 2 -h edge-router
 
@@ -17,9 +17,8 @@ do_check() {
 
   # check hostname is not empty
   if [ "${TARGET_HOST}x" == "x" ]; then
-    echo "TARGET_HOST is not set; use '-h hostname:port'"
+    echo "TARGET_HOST is not set; now set default 'edge-router'"
     TARGET_HOST="edge-router"
-    exit 1
   fi
 
   # check for locust
@@ -99,8 +98,8 @@ done
 do_check
 while true
 do
-  echo " --------- start load test --------- "
+  echo " --------- starting load test --------- "
   do_exec
-  echo "------ load test finished ! sleep 60 seconds and do next ! ------"
-  sleep 60
+  echo "------ load test finished ! sleep 10 seconds and do next ! ------"
+  sleep 10
 done
