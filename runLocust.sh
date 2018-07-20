@@ -18,6 +18,7 @@ do_check() {
   # check hostname is not empty
   if [ "${TARGET_HOST}x" == "x" ]; then
     echo "TARGET_HOST is not set; use '-h hostname:port'"
+    TARGET_HOST="edge-router"
     exit 1
   fi
 

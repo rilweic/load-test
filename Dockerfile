@@ -13,5 +13,5 @@ ADD run.sh /usr/local/bin/run.sh
 EXPOSE 8089
 
 
-ENTRYPOINT ["/usr/local/bin/run.sh","edge-router"]
+ENTRYPOINT ["/usr/local/bin/runLocust.sh","edge-router"]
 # CMD [ "edge-router" ]
