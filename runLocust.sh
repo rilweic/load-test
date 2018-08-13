@@ -10,6 +10,7 @@ INITIAL_DELAY=1
 TARGET_HOST="$HOST"
 CLIENTS=2
 REQUESTS=100
+INTERVAL=${INTERVAL:-15}
 
 # -d 60 -r 200 -c 2 -h edge-router
 
@@ -100,6 +101,6 @@ while true
 do
   echo " --------- starting load test --------- "
   do_exec
-  echo "------ load test finished ! sleep 15 seconds and do next ! ------"
-  sleep 15
+  echo "------ load test finished ! sleep $INTERVAL seconds and do next ! ------"
+  sleep $INTERVAL
 done
