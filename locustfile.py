@@ -22,7 +22,7 @@ class WebTasks(TaskSet):
         self.client.post("/cart", json={"id": item_id, "quantity": 1})
         self.client.get("/basket.html")
         self.client.get("/orders")
-        flag = randint(0,50)
+        flag = randint(0,30)
         if flag == 5:
             self.client.post("/orders")
         
